@@ -1,4 +1,4 @@
-<img src="https://lbegey.fr/daiva"><br>
+<img src="https://lbegey.fr/daiva.png"><br>
 
 "Daiva" is a Tailwind landing page Template light and ready to Edit in HTML. 6 Simples pages ready for your SaaS / Blog !<br>
 
