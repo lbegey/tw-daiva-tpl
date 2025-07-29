@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daiva</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        :root {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .playfair {
+            font-family: "Playfair Display", serif;
+        }
+
+        .bg-skew:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            transform: skewY(-5deg);
+            transform-origin: top left;
+            z-index: -1;
+            background-color: #ececec;
+            min-height: 600px;
+        }
+    </style>
+</head>
+
+<body class="bg-skew min-h-screen flex flex-col justify-between">
+    <header class="p-4 pt-8">
+        <div class="w-full max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between w-full items-start md:items-center gap-4">
+                <a class="playfair font-bold text-2xl" href="/">Daiva ///</a>
+                <nav class="flex items-center gap-8 text-sm">
+                    <a href="about.html" class="hover:underline">About us</a>
+                    <a href="blog.html" class="hover:underline">Blog</a>
+                    <a class="flex items-center bg-gray-300 gap-2 p-2 px-6 text-black rounded-full hover:text-white hover:bg-gray-600"
+                        href="signin.html">
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        <span>Sign in</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="px-4 py-24">
+        <div class="w-full max-w-5xl mx-auto">
+            <div class="flex flex-col sm:flex-row gap-8">
+                <div class="w-full hidden sm:block sm:max-w-[400px]">
+                    <img class="object-cover w-full" src="codye.png" alt="">
+                </div>
+                <div class="w-full flex flex-col items-start gap-4">
+                    <small class="border-l-2 pl-2 mb-4 text-xs">Done with passion</small>
+                    <h1 class="playfair font-bold text-2xl md:text-4xl xl:text-6xl">
+                        Build by developers for developers
+                    </h1>
+                    <p class="text-md text-gray-500">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, itaque veniam, sequi totam
+                        asperiores omnis id facere quod exercitationem qui vitae perferendis eveniet! Dignissimos quia
+                        dolorum cumque enim cupiditate quod!
+                    </p>
+                    <a class="bg-black p-2 mt-4 px-6 text-white rounded-full hover:bg-gray-800" href="signin.html">
+                        Let's start
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="px-4 py-24">
+        <div class="w-full max-w-5xl mx-auto">
+            <div class="flex flex-col gap-8">
+                <small class="border-l-2 pl-2 text-xs">Trust by many</small>
+                <div class="grid grid-cols-2 sm:grid-cols-4 items-center gap-4">
+                    <div>
+                        <img class="grayscale max-w-[140px]"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/1280px-Firebase_Logo.svg.png"
+                            alt="">
+                    </div>
+                    <div>
+                        <img class="grayscale max-w-[140px]"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png"
+                            alt="">
+                    </div>
+                    <div>
+                        <img class="grayscale max-w-[140px]"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/2560px-Coinbase.svg.png"
+                            alt="">
+                    </div>
+                    <div>
+                        <img class="grayscale max-w-[140px]"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="px-4 py-24">
+        <div class="w-full max-w-5xl mx-auto">
+            <h2 class="playfair font-bold text-4xl mb-12">
+                Connectivity first
+            </h2>
+            <div class="flex flex-col md:grid md:grid-cols-2 gap-4">
+                <div class="flex flex-col gap-2 mb-8">
+                    <small class="border-l-2 pl-2 text-xs">Seamless Connectivity</small>
+                    <h2 class="playfair font-bold text-xl">Web3 Integrations</h2>
+                    <p class="text-sm text-gray-500">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eaque unde quod doloremque,
+                        accusantium dolorem odio asperiores aspernatur minima!
+                    </p>
+                    <a href="" class="underline text-sm">
+                        see more
+                    </a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <small class="border-l-2 pl-2 text-xs">Seamless Connectivity</small>
+                    <h2 class="playfair font-bold text-xl">Web3 Integrations</h2>
+                    <p class="text-sm text-gray-500">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eaque unde quod doloremque,
+                        accusantium dolorem odio asperiores aspernatur minima!
+                    </p>
+                    <a href="" class="underline text-sm">
+                        see more
+                    </a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <small class="border-l-2 pl-2 text-xs">Seamless Connectivity</small>
+                    <h2 class="playfair font-bold text-xl">Web3 Integrations</h2>
+                    <p class="text-sm text-gray-500">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eaque unde quod doloremque,
+                        accusantium dolorem odio asperiores aspernatur minima!
+                    </p>
+                    <a href="" class="underline text-sm">
+                        see more
+                    </a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <small class="border-l-2 pl-2 text-xs">Seamless Connectivity</small>
+                    <h2 class="playfair font-bold text-xl">Web3 Integrations</h2>
+                    <p class="text-sm text-gray-500">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eaque unde quod doloremque,
+                        accusantium dolorem odio asperiores aspernatur minima!
+                    </p>
+                    <a href="" class="underline text-sm">
+                        see more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="px-4 py-24">
+        <div class="relative">
+            <div class="bg-skew"></div>
+        </div>
+        <div class="w-full max-w-5xl mx-auto">
+            <div class="flex flex-col-reverse sm:flex-row-reverse gap-8 items-start md:items-center">
+                <div class="w-full sm:max-w-[400px]">
+                    <img class="object-cover w-full" src="codye.png" alt="">
+                </div>
+                <div class="flex flex-col items-end text-right gap-4 w-full">
+                    <small class="border-r-2 pr-2 mb-4 text-xs">Proven impact</small>
+                    <h2 class="playfair font-bold text-4xl">
+                        Shape the future
+                    </h2>
+                    <p class="text-md text-gray-500">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, sunt accusamus? Placeat et
+                        vero, labore, facilis quia porro fuga ipsam eveniet ipsa ad tempore nulla quidem magnam
+                        voluptate culpa earum!
+                    </p>
+                    <a class="hover:bg-gray-800 bg-black p-2 mt-4 px-6 text-white rounded-full" href="signin.html">
+                        Let's start
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="px-4 py-24">
+        <div class="w-full max-w-5xl mx-auto">
+            <div class="flex flex-col gap-4">
+                <small class="border-l-2 pl-2 mb-4 text-xs">Super tool</small>
+                <h2 class="playfair font-bold text-4xl">
+                    All in one !
+                </h2>
+                <p class="text-md text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sit perferendis quod mollitia ut
+                    pariatur nihil atque labore neque eius, autem, culpa aut ab alias nisi dolorum corporis voluptates
+                    minima.
+                </p>
+                <div class="mt-4 flex flex-col md:grid grid-cols-2 gap-4">
+                    <div class="bg-gray-100 rounded-full flex items-center gap-4 p-4 px-12">
+                        <div class="flex bg-white p-4 rounded-full w-12 h-12 items-center">
+                            <i class="bi bi-body-text font-bold text-xl h-[25px]"></i>
+                        </div>
+                        <div>
+                            <h4 class="playfair font-bold">The title</h4>
+                            <small class="text-gray-500">Payement method of the 21 century</small>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-full flex items-center gap-4 p-4 px-12">
+                        <div class="flex bg-white p-4 rounded-full w-12 h-12 items-center">
+                            <i class="bi bi-body-text font-bold text-xl h-[25px]"></i>
+                        </div>
+                        <div>
+                            <h4 class="playfair font-bold">The title</h4>
+                            <small class="text-gray-500">Payement method of the 21 century</small>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-full flex items-center gap-4 p-4 px-12">
+                        <div class="flex bg-white p-4 rounded-full w-12 h-12 items-center">
+                            <i class="bi bi-body-text font-bold text-xl h-[25px]"></i>
+                        </div>
+                        <div>
+                            <h4 class="playfair font-bold">The title</h4>
+                            <small class="text-gray-500">Payement method of the 21 century</small>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-full flex items-center gap-4 p-4 px-12">
+                        <div class="flex bg-white p-4 rounded-full w-12 h-12 items-center">
+                            <i class="bi bi-body-text font-bold text-xl h-[25px]"></i>
+                        </div>
+                        <div>
+                            <h4 class="playfair font-bold">The title</h4>
+                            <small class="text-gray-500">Payement method of the 21 century</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="px-4 py-24">
+        <div class="w-full max-w-5xl mx-auto">
+            <div class="flex flex-col items-start gap-4">
+                <small class="border-l-2 pl-2 mb-4 text-xs">pepitasses</small>
+                <h2 class="playfair font-bold text-4xl">
+                    Blog's articles
+                </h2>
+                <p class="text-md text-gray-500">
+                    Effortlessly integrate dApps, track on-chain data, and automate insights with powerful Web3-native
+                    solutions. The future is decentralized—build with confidence.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-8 mt-8">
+                    <a href="article.html" class="flex flex-col gap-4 w-full">
+                        <h3 class="playfair font-bold text-2xl">
+                            True Ownership
+                        </h3>
+                        <img class="object-cover" src="codye2.png" alt="">
+                        <small>
+                            Your data, your assets, your rules. With Web3, you have complete authority over your digital
+                            identity, finances, and online presence.
+                        </small>
+                        <span class="text-xs underline">see more</span>
+                    </a>
+                    <a href="article.html" class="flex flex-col gap-4 w-full">
+                        <h3 class="playfair font-bold text-2xl">
+                            Decentralized & Secure
+                        </h3>
+                        <img class="object-cover" src="codye2.png" alt="">
+                        <small>
+                            Powered by blockchain technology, our platform eliminates the need for intermediaries,
+                            making it trustless, transparent, and resistant to censorship.
+                        </small>
+                        <span class="text-xs underline">see more</span>
+                    </a>
+                </div>
+                <a class="bg-black p-2 mt-4 px-6 text-white rounded-full hover:bg-gray-800" href="blog.html">
+                    More articles
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="px-4 py-20">
+        <div class="w-full max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 gap-6 lg:gap-12 lg:grid-cols-3">
+                <div class="text-left">
+                    <div>
+                        <h2 class="playfair text-2xl font-bold">
+                            Lorem ipsum dolor sit
+                        </h2>
+                        <small class="text-gray-500 text-md">
+                            Dolorem cupiditate voluptatem veniam reprehenderit.
+                        </small>
+                    </div>
+                </div>
+                <div class="relative w-full mx-auto font-normal lg:col-span-2" x-data="{
+        activeAccordion: '',
+        setActiveAccordion(id) {
+        this.activeAccordion = (this.activeAccordion == id) ? '' : id
+        }
+        }">
+                    <div class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+                        x-data="{ id: $id('accordion') }"
+                        :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+                        <button
+                            class="cursor-pointer flex items-center justify-between w-full p-4 px-0 pb-1 text-sm text-left select-none lg:text-base"
+                            @click="setActiveAccordion(id)">
+                            <span>How does it work?</span>
+                            <svg class="w-5 h-5 duration-300 ease-out text-zinc-500" fill="none" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5"
+                                :class="{ '-rotate-[45deg]': activeAccordion==id }">
+                                <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                        <div x-collapse="" x-show="activeAccordion==id"
+                            style="height: 0px; overflow: hidden; display: none;" hidden="">
+                            <div class="p-4 pt-2 text-sm text-gray-500">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi laboriosam vitae
+                                reiciendis corrupti! Explicabo, libero reiciendis iste ipsa voluptatem, cupiditate ab
+                                culpa expedita asperiores at quasi laborum tempore magnam corrupti.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+                        x-data="{ id: $id('accordion') }"
+                        :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+                        <button
+                            class="cursor-pointer flex items-center justify-between w-full p-4 px-0 pb-1 text-sm text-left select-none lg:text-base"
+                            @click="setActiveAccordion(id)">
+                            <span>What the lorem?</span>
+                            <svg class="w-5 h-5 duration-300 ease-out text-zinc-500" fill="none" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5"
+                                :class="{ '-rotate-[45deg]': activeAccordion==id }">
+                                <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                        <div x-collapse="" x-show="activeAccordion==id"
+                            style="height: 0px; overflow: hidden; display: none;" hidden="">
+                            <div class="p-4 pt-2 text-sm text-gray-500">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ratione expedita
+                                possimus inventore in. Explicabo, quasi repellendus a dolore totam laudantium, molestias
+                                quis reiciendis rerum vero, numquam sint earum voluptatum?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+                        x-data="{ id: $id('accordion') }"
+                        :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+                        <button
+                            class="cursor-pointer flex items-center justify-between w-full p-4 px-0 pb-1 text-sm text-left select-none lg:text-base"
+                            @click="setActiveAccordion(id)">
+                            <span>Can I cancel my subscription?</span>
+                            <svg class="w-5 h-5 duration-300 ease-out text-zinc-500" fill="none" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5"
+                                :class="{ '-rotate-[45deg]': activeAccordion==id }">
+                                <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                        <div x-collapse="" x-show="activeAccordion==id"
+                            style="height: 0px; overflow: hidden; display: none;" hidden="">
+                            <div class="p-4 pt-2 text-sm text-gray-500">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex cum repellendus
+                                eligendi maxime magni molestiae saepe beatae, excepturi id dolores recusandae ea
+                                perferendis repudiandae? Ea deleniti blanditiis quae iusto!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+                        x-data="{ id: $id('accordion') }"
+                        :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+                        <button
+                            class="cursor-pointer flex items-center justify-between w-full p-4 px-0 pb-1 text-sm text-left select-none lg:text-base"
+                            @click="setActiveAccordion(id)">
+                            <span>is it safe?</span>
+                            <svg class="w-5 h-5 duration-300 ease-out text-zinc-500" fill="none" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5"
+                                :class="{ '-rotate-[45deg]': activeAccordion==id }">
+                                <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                        <div x-collapse="" x-show="activeAccordion==id"
+                            style="height: 0px; overflow: hidden; display: none;" hidden="">
+                            <div class="p-4 pt-2 text-sm text-gray-500">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat aspernatur iste ab
+                                optio magni veritatis voluptatibus quaerat. Error ipsam dolore, explicabo consequatur
+                                incidunt rem culpa, est corporis nihil necessitatibus cum!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+                        x-data="{ id: $id('accordion') }"
+                        :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+                        <button
+                            class="cursor-pointer flex items-center justify-between w-full p-4 px-0 pb-1 text-sm text-left select-none lg:text-base"
+                            @click="setActiveAccordion(id)">
+                            <span>Can I use 2 account?</span>
+                            <svg class="w-5 h-5 duration-300 ease-out text-zinc-500" fill="none" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5"
+                                :class="{ '-rotate-[45deg]': activeAccordion==id }">
+                                <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                        <div x-collapse="" x-show="activeAccordion==id"
+                            style="height: 0px; overflow: hidden; display: none;" hidden="">
+                            <div class="p-4 pt-2 text-sm text-gray-500">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est placeat veritatis ex
+                                perspiciatis, incidunt, quos quia accusantium recusandae aspernatur inventore nulla,
+                                esse aut expedita numquam rem! Quibusdam deleniti magni rerum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+                        x-data="{ id: $id('accordion') }"
+                        :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+                        <button
+                            class="cursor-pointer flex items-center justify-between w-full p-4 px-0 pb-1 text-sm text-left select-none lg:text-base"
+                            @click="setActiveAccordion(id)">
+                            <span>Is it a free service?</span>
+                            <svg class="w-5 h-5 duration-300 ease-out text-zinc-500" fill="none" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5"
+                                :class="{ '-rotate-[45deg]': activeAccordion==id }">
+                                <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                        <div x-collapse="" x-show="activeAccordion==id"
+                            style="height: 0px; overflow: hidden; display: none;" hidden="">
+                            <div class="p-4 pt-2 text-sm text-gray-500">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequuntur optio tempore
+                                voluptatibus quae commodi voluptate excepturi pariatur vitae odit eius placeat dicta
+                                cum, culpa quod similique, incidunt delectus est.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="p-4 pb-8">
+        <div class="w-full max-w-5xl mx-auto">
+            <div class="flex gap-4 justify-between items-center">
+                <small>Copyright © 2025</small>
+                <div class="flex items-center gap-4">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-slack"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daiva</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        :root {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .playfair {
+            font-family: "Playfair Display", serif;
+        }
+
+        .bg-skew:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            transform: skewY(-5deg);
+            transform-origin: top left;
+            z-index: -1;
+            background-color: #ececec;
+            min-height: 700px;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col justify-between">
+    <header class="p-4 pt-8">
+        <div class="w-full max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between w-full items-start md:items-center gap-4">
+                <a class="playfair font-bold text-2xl" href="/">Daiva ///</a>
+                <nav class="flex items-center gap-8 text-sm">
+                    <a href="about.html" class="hover:underline">About us</a>
+                    <a href="blog.html" class="hover:underline">Blog</a>
+                    <a class="flex items-center bg-gray-300 gap-2 p-2 px-6 text-black rounded-full hover:text-white hover:bg-gray-600"
+                        href="signin.html">
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        <span>Sign in</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="px-4 py-24">
+        <div class="relative hidden md:block">
+            <div class="bg-skew"></div>
+        </div>
+        <div class="w-full max-w-5xl mx-auto flex flex-col gap-8 max-w-[350px]">
+            <div>
+                <h1 class="playfair font-bold">Sign in to your account</h1>
+                <span class="text-gray-600 text-sm">
+                    Please enter your email and password to sign in.
+                </span>
+            </div>
+            <form action="" class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-bold" for="email">Email</label>
+                    <input type="text" id="email" class="p-2 border border-gray-400 rounded bg-white">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex justify-between gap-4 items-center">
+                        <label class="text-sm font-bold" for="password">Password</label>
+                        <a href="" class="text-xs underline text-hray-800">Forget password ?</a>
+                    </div>
+                    <input type="password" id="password" class="p-2 border border-gray-400 rounded bg-white">
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="flex gap-2 items-center">
+                        <input id="rememberme" name="rememberme" type="checkbox">
+                        <label for="rememberme" class="text-sm">Remember me</label>
+                    </div>
+                    <input type="submit" value="Sign in" class="bg-black text-white p-2 cursor-pointer rounded">
+                </div>
+            </form>
+            <div class="flex flex-col gap-4 text-center">
+                <a href="" class="bg-gray-400 text-white p-2 cursor-pointer rounded">Sign in with Apple</a>
+                <a href="" class="bg-gray-400 text-white p-2 cursor-pointer rounded">Sign in with Google</a>
+                <a href="" class="bg-gray-400 text-white p-2 cursor-pointer rounded">Sign in with Facebook</a>
+            </div>
+            <div class="flex gap-2 items-center text-xs">
+                <span>Don't have an account ?</span><a href="" class="underline text-gray-800">Sign up</a>
+            </div>
+        </div>
+    </section>
+    <footer class="p-4 pb-8">
+        <div class="w-full max-w-5xl mx-auto">
+            <div class="flex gap-4 justify-between items-center">
+                <small>Copyright © 2025</small>
+                <div class="flex items-center gap-4">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-slack"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

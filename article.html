@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daiva</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        :root {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .playfair {
+            font-family: "Playfair Display", serif;
+        }
+
+        .bg-skew:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            transform: skewY(-5deg);
+            transform-origin: top left;
+            z-index: -1;
+            background-color: #ececec;
+            min-height: 650px;
+        }
+    </style>
+</head>
+
+<body class="bg-skew min-h-screen flex flex-col justify-between">
+    <header class="p-4 pt-8">
+        <div class="w-full max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between w-full items-start md:items-center gap-4">
+                <a class="playfair font-bold text-2xl" href="/">Daiva ///</a>
+                <nav class="flex items-center gap-8 text-sm">
+                    <a href="about.html" class="hover:underline">About us</a>
+                    <a href="blog.html" class="hover:underline">Blog</a>
+                    <a class="flex items-center bg-gray-300 gap-2 p-2 px-6 text-black rounded-full hover:text-white hover:bg-gray-600"
+                        href="signin.html">
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        <span>Sign in</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="px-4 py-10 md:py-24 md:pt-10">
+        <div class="w-full max-w-5xl mx-auto">
+            <div class="flex items-start">
+                <a href="blog.html"
+                    class="text-sm flex items-center bg-gray-300 gap-2 p-2 px-6 text-black rounded-full hover:text-white hover:bg-gray-600">
+                    <i class="bi bi-arrow-left"></i> <span>Previous page</span>
+                </a>
+            </div>
+            <div class="flex flex-col gap-8 py-8">
+                <h1 class="playfair font-bold text-2xl md:text-4xl xl:text-6xl">
+                    True Ownership
+                </h1>
+            </div>
+            <div class="flex flex-col md:grid grid-cols-12 gap-8">
+                <div class="flex flex-col gap-4 col-span-12">
+                    <div href="" class="col-span-2 flex flex-col gap-4 w-full">
+                        <time datetime="May 07, 2025">May 07, 2025</time>
+                        <img class="object-cover mb-8" src="codye2.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus sagittis ultricies.
+                            In maximus metus tempor nunc aliquam, viverra tincidunt dolor faucibus. Ut posuere posuere
+                            ante et varius. Donec condimentum elit a tellus aliquet venenatis. Proin sed urna sit amet
+                            lacus tristique ultrices eget aliquet odio. Praesent malesuada urna neque, id scelerisque
+                            eros accumsan quis. Vestibulum ut augue id nibh vulputate egestas.
+                        </p>
+                        <p>
+
+                            Donec ac lacinia elit. Sed eu nisi fringilla, mattis lorem non, lacinia ipsum. Proin metus
+                            eros, interdum eu eros vitae, bibendum ultrices ante. Etiam sed ultricies risus, eu mollis
+                            tellus. Sed massa ante, vulputate id magna eget, ullamcorper semper quam. Nulla sollicitudin
+                            ac eros pulvinar scelerisque. Mauris sagittis finibus quam sit amet faucibus. Vivamus ut
+                            dignissim dui. Sed sit amet lobortis leo. Curabitur cursus hendrerit mattis. Nulla ultricies
+                            mi quis fringilla ornare. Nulla orci nisi, euismod at est sit amet, suscipit semper elit.
+                            Maecenas interdum odio quam.
+                        </p>
+                        <p>
+
+                            Aenean porttitor nulla nibh, sed lacinia justo accumsan et. Quisque facilisis leo at diam
+                            eleifend lacinia. Praesent mattis non sem a condimentum. Etiam eu consequat dui, at
+                            convallis sapien. Ut quis enim eu odio porttitor tempus ut eget lectus. Sed in massa lectus.
+                            Proin interdum ex eget turpis euismod aliquet. Aliquam semper bibendum ligula. Mauris est
+                            nisl, vulputate scelerisque faucibus vitae, euismod nec turpis. Ut tempus urna massa, quis
+                            ornare purus mollis sed. Donec sagittis nibh a velit maximus pellentesque. Maecenas in
+                            malesuada ipsum. Morbi venenatis augue non lacus iaculis elementum. Praesent vulputate
+                            malesuada erat vitae aliquam.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 py-8">
+                            <div class="col-span-1">
+                                <img class="object-cover" src="codye2.png" alt="">
+                            </div>
+                            <div class="col-span-1">
+                                <img class="object-cover" src="codye2.png" alt="">
+                            </div>
+                            <div class="col-span-1">
+                                <img class="object-cover" src="codye2.png" alt="">
+                            </div>
+                            <div class="col-span-1">
+                                <img class="object-cover" src="codye2.png" alt="">
+                            </div>
+                        </div>
+                        <p>
+
+                            Aenean leo ligula, faucibus et sapien varius, pulvinar viverra ipsum. Vivamus in quam ex.
+                            Curabitur aliquet, lacus a tincidunt sodales, enim lorem semper ex, quis hendrerit leo leo
+                            id ipsum. Suspendisse sed justo pharetra, ornare turpis venenatis, egestas nunc. Integer
+                            lobortis nisl molestie velit vestibulum, nec ullamcorper dui laoreet. Duis tempus tempor mi,
+                            nec consectetur libero dignissim sed. Donec tellus dolor, mollis sit amet posuere a, finibus
+                            in augue. Aenean vestibulum ultricies velit, sed fermentum magna tristique id. Orci varius
+                            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras id ligula
+                            vel diam pretium fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <p>
+
+                            Cras mollis consequat pulvinar. Maecenas feugiat arcu eros, ut posuere quam hendrerit at.
+                            Fusce sit amet accumsan turpis. Sed posuere nunc eu congue accumsan. Sed at tellus ornare,
+                            suscipit justo eget, pulvinar tortor. Nunc eleifend nisl eu ex convallis, ac lobortis lorem
+                            interdum. Donec non est at sem aliquet placerat. Suspendisse at neque eget ipsum euismod
+                            varius vitae sit amet nisl. Proin ornare non lorem id accumsan. Etiam ligula sapien, laoreet
+                            in neque id, dignissim viverra est. Cras est nisi, interdum nec massa ac, porttitor
+                            dignissim orci. Aenean maximus dapibus volutpat. Integer fermentum lacus in interdum
+                            aliquet. Suspendisse egestas ipsum libero, id interdum erat facilisis non.
+                        </p>
+                        <small>
+                            Donec non est at sem aliquet placerat. Suspendisse at neque eget ipsum euismod
+                            varius vitae sit amet nisl. Proin ornare non lorem id accumsan. Etiam ligula sapien, laoreet
+                            in neque id, dignissim viverra est. Cras est nisi, interdum nec massa ac, porttitor
+                            dignissim orci. Aenean maximus dapibus volutpat. Integer fermentum lacus in interdum
+                            aliquet. Suspendisse egestas ipsum libero, id interdum erat facilisis non.
+                        </small>
+                        <ul class="list-disc list-inside">
+                            <li>Lorem ipsum dolor sit amet consectetur</li>
+                            <li>impedit repudiandae aspernatur vero id facilis beatae qui modi minus?</li>
+                            <li> adipisicing elit. Quas libero, aut doloremque</li>
+                            <li>accusantium vitae recusandae, maxime fuga voluptas nostrum blanditiis</li>
+                        </ul>
+                        <div class="overflow-x-auto rounded-xl shadow-md mt-4">
+                            <table class="min-w-full divide-y divide-gray-200">
+                                <thead class="bg-gray-100">
+                                    <tr>
+                                        <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Niche</th>
+                                        <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Audience
+                                        </th>
+                                        <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Potentiel
+                                        </th>
+                                        <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Produit
+                                            Complémentaire</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-gray-100 text-sm">
+                                    <tr>
+                                        <td class="px-6 py-4 font-medium text-gray-900">UI pour devs</td>
+                                        <td class="px-6 py-4 text-gray-600">Développeurs front-end</td>
+                                        <td class="px-6 py-4 text-green-600 font-semibold">Élevé</td>
+                                        <td class="px-6 py-4 text-gray-700">Templates, composants UI</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 font-medium text-gray-900">Tiny SaaS</td>
+                                        <td class="px-6 py-4 text-gray-600">Solopreneurs / Dev indie</td>
+                                        <td class="px-6 py-4 text-green-600 font-semibold">Très élevé</td>
+                                        <td class="px-6 py-4 text-gray-700">Newsletter, annuaire, études</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 font-medium text-gray-900">Side Hustle Dev</td>
+                                        <td class="px-6 py-4 text-gray-600">Développeurs salariés</td>
+                                        <td class="px-6 py-4 text-yellow-500 font-semibold">Bon</td>
+                                        <td class="px-6 py-4 text-gray-700">Blog + affiliation</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 font-medium text-gray-900">Niches rentables</td>
+                                        <td class="px-6 py-4 text-gray-600">Dev freelances</td>
+                                        <td class="px-6 py-4 text-green-500 font-semibold">Élevé</td>
+                                        <td class="px-6 py-4 text-gray-700">Accès premium à une base de données</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 font-medium text-gray-900">Build in public toolbox</td>
+                                        <td class="px-6 py-4 text-gray-600">Créateurs solo</td>
+                                        <td class="px-6 py-4 text-green-600 font-semibold">Très élevé</td>
+                                        <td class="px-6 py-4 text-gray-700">Starter kit, micro-outils</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer class="p-4 pb-8">
+        <div class="w-full max-w-5xl mx-auto">
+            <div class="flex gap-4 justify-between items-center">
+                <small>Copyright © 2025</small>
+                <div class="flex items-center gap-4">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-slack"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
